@@ -1,0 +1,71 @@
+#skill{}
+.skill_inner{
+    padding: 16px;
+    @include flex_between_ju;
+
+    @media (max-width:800px){
+        flex-direction: column;
+    }
+
+    .skill_title{
+        position: sticky;
+        top: 70px;
+        left: 0;
+
+        width: 48%;
+        height: 5vw;
+        font-size: 4vw; 
+        font-weight: bold;
+        line-height: 1.6; 
+        // 거의 160%
+        font-family: var(--mainEng-font);
+        // text-transform: uppercase;
+        color: var(--black100);
+        border-bottom: 0.4vw solid var(--black100);
+
+        @media(max-width:800px){
+            width: 100%;
+            margin-bottom: 10vw;
+            background-color: var(--mainBg-color);
+            font-size: 30px;
+            height: auto;
+            top: 68px;
+        }
+
+        em{
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 2;
+            font-family: var(--mainKor-font);
+        }
+    }
+    .skill_desc{
+        width: 50%;
+        
+        @media(max-width:800px){
+            width: 100%;
+        }
+        span{
+            font-size: 5vw;
+            font-weight: bold;
+            // font-family: var(--mainNum-font);
+
+            @media(max-width:800px){
+                font-size: 10vw;
+            }
+
+        }
+        h3{
+            font-size: 1.5rem;
+            text-decoration: underline;
+            text-decoration-color: var(--black300);
+            margin-bottom: 1vw;
+            font-weight: 900;
+        }
+        p{
+            margin-bottom: 30vh;
+            font-size: 1.1rem;
+        }
+    }
+}
+.skill_inner{}

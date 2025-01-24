@@ -11,6 +11,13 @@
     align-items: center;
     justify-content: space-between;
 }
+// 가로만 양쪽 정렬
+@mixin flex_between_ju{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 // 중앙 정렬
 @mixin position_center{
