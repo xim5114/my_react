@@ -1,13 +1,8 @@
 import React from 'react'
-
 import about from '../assets/img/img_about.png'
-import about2 from '../assets/img/img_about_2.png'
-// 변수
+import {introText} from '../contants';
 
-const introText = {
-    title:'port developer',
-    desc:['talent is','found at the end of the','effort']
-}
+
 // [] : 배열 / {}: 개별
 
 const Intro = () => {

@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import HomeView from './views/HomeView';
 import AboutView from './views/AboutView';
+import link from './utils/link'
 
 
 const App = ()=>{
+  useEffect(()=>{
+    link();
+  },[]);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -25,3 +30,6 @@ export default App;
 // 화살표함수에 넣기
 // 하나면 return 안에 div
 // 두개이상부터는 return 안에 ()
+
+// useEffect(()=>{},[]); 한번씩만 실행
+
